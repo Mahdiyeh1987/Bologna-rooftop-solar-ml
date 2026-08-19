@@ -1,4 +1,4 @@
-# Step 8 — Python Modeling (LightGBM primary, XGBoost fallback) — improved
+# Rooftop solar modeling and citywide prediction
 # Paths
 TRAIN_PATH = r"C:\GIS\work\train_dataset.csv"
 INFER_PATH = r"C:\GIS\work\inference_features.csv"
