@@ -1,0 +1,13 @@
+# Reconstructed Python environment for the thesis modelling workflow
+# Platform: Windows 10
+# Python: 3.12 (venv)
+# Main modelling runs executed in early October 2025
+
+numpy==2.3.3
+pandas==2.3.3
+scikit-learn==1.7.2
+lightgbm==4.6.0
+xgboost==3.0.5
+matplotlib==3.10.6
+joblib==1.5.2
+shap==0.48.0
