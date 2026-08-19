@@ -11,3 +11,8 @@ xgboost==3.0.5
 matplotlib==3.10.6
 joblib==1.5.2
 shap==0.48.0
+
+# Geospatial dependencies used by the repository scripts
+geopandas
+fiona
+shapely
