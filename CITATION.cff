@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+
+message: >-
+  If you use this software or its outputs, please cite this repository.
+  For scientific results derived from the dissertation, please also cite
+  the corresponding thesis and/or associated publication.
+
+title: "Bologna Rooftop Solar Potential Mapping with Machine Learning"
+
+type: software
+
+authors:
+  - family-names: "Tabatabaei"
+    given-names: "Mahdiyeh"
+    orcid: "https://orcid.org/0009-0007-7219-3525"
+
+abstract: >-
+  A reproducible open-data and machine-learning workflow for predicting
+  and mapping annual roof-plane solar irradiation in Bologna, Italy.
+  The workflow combines geospatial data, urban morphology indicators,
+  physics-based irradiation labels, gradient-boosted machine learning,
+  spatially aware validation, and SHAP-based explainability.
+
+keywords:
+  - rooftop solar potential
+  - machine learning
+  - urban solar energy
+  - geospatial analysis
+  - LightGBM
+  - SHAP
+  - Bologna
+  - reproducible research
+
+repository-code: "https://github.com/Mahdiyeh1987/Bologna-rooftop-solar-ml"
+
+url: "https://github.com/Mahdiyeh1987/Bologna-rooftop-solar-ml"
+
+license: MIT
