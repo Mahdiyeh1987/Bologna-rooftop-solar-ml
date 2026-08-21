@@ -1,9 +1,10 @@
 cff-version: 1.2.0
 
 message: >-
-  If you use this software or its outputs, please cite this repository.
-  For scientific results derived from the dissertation, please also cite
-  the corresponding thesis and/or associated publication.
+  If you use this software or its outputs, please cite the archived
+  Zenodo release. For scientific results derived from the research,
+  please also cite the corresponding dissertation and/or associated
+  journal publication.
 
 title: "Bologna Rooftop Solar Potential Mapping with Machine Learning"
 
@@ -19,7 +20,8 @@ abstract: >-
   and mapping annual roof-plane solar irradiation in Bologna, Italy.
   The workflow combines geospatial data, urban morphology indicators,
   physics-based irradiation labels, gradient-boosted machine learning,
-  spatially aware validation, and SHAP-based explainability.
+  spatially aware validation, calibration analysis, sensitivity analysis,
+  and SHAP-based explainability.
 
 keywords:
   - rooftop solar potential
@@ -31,8 +33,14 @@ keywords:
   - Bologna
   - reproducible research
 
+version: "1.0.0"
+
+date-released: 2026-08-21
+
+doi: "10.5281/zenodo.22018674"
+
 repository-code: "https://github.com/Mahdiyeh1987/Bologna-rooftop-solar-ml"
 
-url: "https://github.com/Mahdiyeh1987/Bologna-rooftop-solar-ml"
+url: "https://doi.org/10.5281/zenodo.22018674"
 
 license: MIT
