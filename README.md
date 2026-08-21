@@ -1,5 +1,7 @@
 # Bologna Rooftop Solar Potential Mapping with Machine Learning
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22018674.svg)](https://doi.org/10.5281/zenodo.22018674)
+
 Reproducible geospatial and machine-learning workflow for predicting and mapping **annual roof-plane solar irradiation** across rooftops in Bologna, Italy.
 
 The predicted quantity is expressed in **kWh·m⁻²·yr⁻¹**.
@@ -79,15 +81,15 @@ GIS preprocessing was carried out using QGIS and associated geospatial tools. Th
 
 Main Python modelling script used to:
 
-- load the labelled training dataset;
-- select numerical predictor variables;
-- define grouped and stratified train/test partitions;
-- train the LightGBM regression model;
-- calculate prediction metrics;
-- generate feature-importance outputs;
-- predict annual irradiation for city-wide rooftops;
-- export city-wide predictions;
-- optionally save the trained LightGBM model.
+* load the labelled training dataset;
+* select numerical predictor variables;
+* define grouped and stratified train/test partitions;
+* train the LightGBM regression model;
+* calculate prediction metrics;
+* generate feature-importance outputs;
+* predict annual irradiation for city-wide rooftops;
+* export city-wide predictions;
+* optionally save the trained LightGBM model.
 
 The principal target variable is:
 
@@ -178,14 +180,14 @@ inference_features.csv
 
 Contains the labelled rooftop sample, including:
 
-- `roof_id`
-- `label_mean`
-- administrative and morphological grouping variables
-- geometric descriptors
-- sky-view and shading indicators
-- terrain descriptors
-- land-cover and urban-context variables
-- climatic variables
+* `roof_id`
+* `label_mean`
+* administrative and morphological grouping variables
+* geometric descriptors
+* sky-view and shading indicators
+* terrain descriptors
+* land-cover and urban-context variables
+* climatic variables
 
 ### `inference_features.csv`
 
@@ -207,13 +209,13 @@ Raw third-party geospatial datasets are not redistributed through this repositor
 
 The workflow uses data from sources including:
 
-- OpenStreetMap / Geofabrik
-- Comune di Bologna Open Data
-- Copernicus DEM GLO-30
-- ESA WorldCover
-- Copernicus Tree Cover Density
-- Urban Atlas
-- PVGIS / Joint Research Centre
+* OpenStreetMap / Geofabrik
+* Comune di Bologna Open Data
+* Copernicus DEM GLO-30
+* ESA WorldCover
+* Copernicus Tree Cover Density
+* Urban Atlas
+* PVGIS / Joint Research Centre
 
 External datasets remain subject to their original licences, terms of use, and attribution requirements.
 
@@ -245,17 +247,17 @@ The main modelling workflow was executed primarily in a Windows environment usin
 
 The scripts use packages including:
 
-- NumPy
-- pandas
-- scikit-learn
-- LightGBM
-- XGBoost
-- matplotlib
-- joblib
-- SHAP
-- GeoPandas
-- Fiona
-- Shapely
+* NumPy
+* pandas
+* scikit-learn
+* LightGBM
+* XGBoost
+* matplotlib
+* joblib
+* SHAP
+* GeoPandas
+* Fiona
+* Shapely
 
 ---
 
@@ -283,19 +285,30 @@ The scripts are preserved as closely as possible to the versions used during the
 
 The workflow incorporates several measures to support traceability and reproducibility:
 
-- deterministic rooftop identifiers (`roof_id`);
-- fixed random seeds;
-- documented data provenance;
-- explicit coordinate reference system;
-- version-controlled Python scripts;
-- documented model hyperparameters;
-- grouped and spatial validation;
-- calibration diagnostics;
-- SHAP-based explainability;
-- ablation analysis;
-- threshold-sensitivity analysis.
+* deterministic rooftop identifiers (`roof_id`);
+* fixed random seeds;
+* documented data provenance;
+* explicit coordinate reference system;
+* version-controlled Python scripts;
+* documented model hyperparameters;
+* grouped and spatial validation;
+* calibration diagnostics;
+* SHAP-based explainability;
+* ablation analysis;
+* threshold-sensitivity analysis.
 
 Some preprocessing stages depend on GIS operations performed outside Python and therefore require the corresponding documented intermediate datasets.
+
+---
+
+## Archived Release
+
+Version **v1.0.0** of this research software is permanently archived on Zenodo.
+
+**DOI:**
+https://doi.org/10.5281/zenodo.22018674
+
+The Zenodo record preserves a citable snapshot of the repository associated with this research workflow, while the GitHub repository may continue to receive updates and improvements.
 
 ---
 
@@ -307,16 +320,38 @@ Machine-readable citation metadata is provided in:
 CITATION.cff
 ```
 
-A formal versioned release of this repository is intended to be archived through Zenodo so that the research software can receive a persistent DOI.
+If you use the software or computational workflow from this repository, please cite the archived Zenodo release:
 
-When using the scientific results, interpretations, or methodology associated with this repository, please also cite the corresponding dissertation and/or associated journal publication.
+**Tabatabaei, M. (2026). Bologna Rooftop Solar Potential Mapping with Machine Learning (Version 1.0.0) [Computer software]. Zenodo.**
+
+DOI:
+
+```text
+https://doi.org/10.5281/zenodo.22018674
+```
+
+BibTeX-style reference:
+
+```bibtex
+@software{tabatabaei_2026_bologna_rooftop_solar,
+  author    = {Tabatabaei, Mahdiyeh},
+  title     = {Bologna Rooftop Solar Potential Mapping with Machine Learning},
+  version   = {1.0.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.22018674},
+  url       = {https://doi.org/10.5281/zenodo.22018674}
+}
+```
+
+When using the scientific results, interpretations, or methodology associated with this repository, please also cite the corresponding dissertation and/or the journal article directly associated with the research once available.
 
 ---
 
 ## Related Publication
 
-Tabatabaei, M., & Antonini, E. (2025).  
-*Machine Learning for Optimizing Urban Photovoltaics: A Review of Static and Dynamic Factors.*  
+Tabatabaei, M., & Antonini, E. (2025).
+*Machine Learning for Optimizing Urban Photovoltaics: A Review of Static and Dynamic Factors.*
 **Sustainability, 17(18), 8308.**
 
 DOI:
@@ -324,6 +359,8 @@ DOI:
 ```text
 https://doi.org/10.3390/su17188308
 ```
+
+This publication provides related background on the use of machine learning for urban photovoltaic assessment.
 
 The citation for the research article directly associated with this repository will be added after publication.
 
@@ -351,4 +388,20 @@ Google Scholar:
 
 ```text
 https://scholar.google.com/citations?hl=en&user=WjHURE0AAAAJ
+```
+
+---
+
+## Repository and Archive
+
+GitHub repository:
+
+```text
+https://github.com/Mahdiyeh1987/Bologna-rooftop-solar-ml
+```
+
+Archived release:
+
+```text
+https://doi.org/10.5281/zenodo.22018674
 ```
